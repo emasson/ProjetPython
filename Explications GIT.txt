@@ -1,0 +1,115 @@
+
+-------------------------------------------------------------------
+
+0. Paramétrer son ordinateur pour Git à l'iut
+
+	> Se connecter à Eduroam
+
+	Configurer le proxy pour avoir accès à Git:
+
+	> "Ordinateur > clic droit > propriété >
+
+           paramêtre système avancé > variables d'environnement"
+
+	> Ajouter: http_proxy = http://cache.etu.ha.univ-nantes.fr:3128
+
+	> Ajouter: https_proxy = http://cache.etu.ha.univ-nantes.fr:3128
+
+-------------------------------------------------------------------
+
+1. Configurer Git
+
+	Dans la console, lancer les commandes suivantes
+
+	> git config --global user.email <email>
+
+	> git config --global user.name <nom>
+
+-------------------------------------------------------------------
+
+2. Créer un espace de travail git
+
+	Ouvrir une console dans le répertoire de travail souhaité:
+
+	> MAJ + clic droit > Ouvrir une fenêtre de commande ici ...
+
+	Dans la console, lancer les commandes:
+
+	> git init
+
+	> git remote add <name> <url>
+
+	 -- <name>: un nom que vous choisissez
+
+	 -- <url>: url récupérée sur le site (deveo.com)
+
+	 	-- pour l'url, il faut ajouter votre mot de passe:
+
+		-- <login>:<mot de passe>@deveo.com<...>
+
+		-- le login est déja renseigné, il suffit d'ajouter:
+
+		   <mot de passe>
+
+-------------------------------------------------------------------
+
+3. Récupérer les fichiers sur le dépôt distant
+
+	> git pull <remote name> <branch>
+
+	 -- <remote name>: le nom que vous avez choisi pour votre
+ 
+	    remote
+
+	 -- <branch>: la branche sur laquelle récupérer les données
+
+-------------------------------------------------------------------
+
+4. Modifier les fichiers sur votre espace de travail
+
+	> Faire les modifications sur les fichiers
+
+-------------------------------------------------------------------
+
+5. Indexer les modification, puis les valider
+
+	> git add <nom fichier>
+
+	 -- Indexe les modification à valider.
+
+	 -- <nom fichier>: le fichier à indexer
+
+	 -- si vous voulez indexer toutes les modification:
+
+	    git add -A
+
+	> git commit -m <message>
+	
+	-- Une fenêtre VIM peut s'ouvrir pour entrer votre message de commit 
+
+	-- Appuyez sur A
+
+	-- Ecrire le message sous les # (ce sont des commentaires)
+
+	-- Appuyez sur echap
+
+	-- Ecrivez :wq ceci validera votre entrée de message
+
+	-- Ou alors pour éviter ça : faire la commande git commit -m <le message> 
+
+-------------------------------------------------------------------
+
+6. Effectuer les modifications sur le dépôt distant
+
+	> git push <remote name> <branch>
+
+	 -- <remote name>: le nom de la remote qui cible le dossier
+
+	    que vous souhaitez modifier
+
+	 -- <branch>: la branche sur laquelle appliquer les
+
+	    modifications
+
+-------------------------------------------------------------------
+
