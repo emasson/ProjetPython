@@ -21,7 +21,6 @@ database.insert(equs)
 #database.selectAll("equipement")
 database.createNew("Activite", acts[0])
 database.insert(acts)
-database.selectAll("Activite")
 
 database.commit()
 database.close()

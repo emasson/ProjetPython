@@ -14,9 +14,9 @@ class WebManager(object):
 		""" Exposes the service at localhost:8080 """
 		return ''' <html><body> 
 		<h1> Installations sportives des Pays de la loire </h1> 
-		<input type="button" name="Installations" value="Afficher les installations" onclick="self.location.href='display_Installations'">
-		<input type="button" name="Activites" value="Afficher les activites" onclick="self.location.href='display_Activites'"> 
-		<input type="button" name="Installations" value="Afficher les equipements" onclick="self.location.href='display_Equipements'">
+		<input type="button" name="Installations" value="Fiche installations" onclick="self.location.href='display_Installations'">
+		<input type="button" name="Activites" value="Fiche activites" onclick="self.location.href='display_Activites'"> 
+		<input type="button" name="Installations" value="Fiche equipements" onclick="self.location.href='display_Equipements'">
 		</body></html> ''' 
 
 	@cherrypy.expose 
