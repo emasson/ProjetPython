@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accueil</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>Installations Sportives des Pays de la Loire</h1>
+<a href="show_installations">Fiche installations</a><br/>
+<a href="show_equipments">Fiche équipements</a><br/>
+<a href="show_activities">Fiche activités</a>
+<br/><br/>
+Numéro d'Installation: <input type="text" id="numInst" name="numInst"/> <input type="button" onclick="window.location.href='display_Installations/' + document.getElementById('numInst').value;" value="Valider"/><br/>
+Numéro d'Équipement: <input type="text" id="numEquip" name="numEquip"/> <input type="button" onclick="window.location.href='display_Equipements/' + document.getElementById('numEquip').value;" value="Valider"/><br/>
+Numéro d'Activité : <input type="text" id="numActiv" name="numActiv"/> <input type="button" onclick="window.location.href='display_Activites/' + document.getElementById('numActiv').value;" value="Valider"/>
+<br/><br/>
+Chercher une activité dans une ville :<br/>
+Nom de l'activité : <input type="text" id="nomActiv" name="nomActiv"/><br/>
+Nom de la ville : <input type="text" id="nomVille" name="nomVille"/><br/>
+<input type="button" onclick="window.location.href='find_infos/' + document.getElementById('nomActiv').value + '/' + document.getElementById('nomVille').value;" value="Valider"/>
+</body>
+</html>
+
+
